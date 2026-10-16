@@ -290,7 +290,7 @@ tbody tr:hover td{background:var(--surface)}
       <div class="lbl">Configuración</div>
       <button class="nav" data-view="calib"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="6" cy="9" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="3.5" stroke="currentColor" stroke-width="1.5"/></svg>Calibración</button>
       <button class="nav" data-view="matrix"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2.5" y="2.5" width="13" height="13" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 7h13M2.5 11.5h13M7 2.5v13" stroke="currentColor" stroke-width="1.2"/></svg>Matriz de calidad</button>
-      <div class="side-foot"><b>Connect Assistance · CR</b><br>Cuenta de demostración<br>Datos de ejemplo</div>
+      <div class="side-foot"><b>Atento CC</b><br>Cuenta de demostración<br>Datos de ejemplo</div>
     </aside>
 
     <main class="main">
@@ -353,7 +353,7 @@ const CUST=['Mario Vargas','Sofía Jiménez','Rodrigo Castillo','Patricia Mora',
 
 const T={
  out_ok:[
-  ['a','0:02','Buenos días, ¿hablo con {C}? Le saluda {A} de Connect Assistance, le llamo por la renovación de su asistencia vial que vence el 28 de octubre. ¿Tiene dos minutos?',[['apertura','ok','Apertura completa en 12 s']]],
+  ['a','0:02','Buenos días, ¿hablo con {C}? Le saluda {A} de Atento CC, le llamo por la renovación de su asistencia vial que vence el 28 de octubre. ¿Tiene dos minutos?',[['apertura','ok','Apertura completa en 12 s']]],
   ['c','0:14','Sí, dígame.'],
   ['a','0:16','Perfecto. Antes de continuar le informo que esta llamada es grabada por calidad. ¿Me confirma los últimos cuatro dígitos de su cédula?',[['consent','ok','Grabación informada y validación']]],
   ['c','0:25','Claro, 4471.'],
@@ -380,7 +380,7 @@ const T={
   ['a','0:47','Bueno, gracias.',[['proximos','bad','Sin cierre ni próximo paso']]],
  ],
  out_risk:[
-  ['a','0:02','Buenas tardes, ¿{C}? Soy {A} de Connect Assistance, le llamo porque su asistencia vial vence este mes y quiero ayudarle a renovarla. ¿Tiene un momento?',[['apertura','ok','Apertura completa']]],
+  ['a','0:02','Buenas tardes, ¿{C}? Soy {A} de Atento CC, le llamo porque su asistencia vial vence este mes y quiero ayudarle a renovarla. ¿Tiene un momento?',[['apertura','ok','Apertura completa']]],
   ['c','0:13','Sí, pero quiero saber bien qué incluye porque la otra vez no me cubrieron.'],
   ['a','0:19','Entiendo la molestia. ¿Me cuenta qué pasó en ese evento?',[['escucha','ok','Explora la queja']]],
   ['c','0:24','Me quedé sin gasolina en Cartago y me dijeron que eso no estaba incluido.'],
@@ -393,7 +393,7 @@ const T={
   ['a','1:05','Listo, le llega el contrato por correo. Gracias.',[['proximos','warn','Sin fecha de seguimiento']]],
  ],
  in_ok:[
-  ['a','0:01','Connect Assistance, le atiende {A}, buenos días. ¿Con quién tengo el gusto?',[['apertura','ok','Apertura completa']]],
+  ['a','0:01','Atento CC, le atiende {A}, buenos días. ¿Con quién tengo el gusto?',[['apertura','ok','Apertura completa']]],
   ['c','0:06','Hola, soy {C}. Vi el cotizador en la página y quiero saber precios de asistencia vial.'],
   ['a','0:12','Con gusto, {C}. Le comento que la llamada es grabada. Para darle el precio exacto, ¿qué vehículo tiene y cuántos kilómetros maneja a la semana aproximadamente?',[['consent','ok','Grabación informada'],['necesidad','ok','Preguntas de descubrimiento']]],
   ['c','0:25','Un Toyota Yaris 2019, unos 300 km a la semana, voy a Limón seguido.'],
